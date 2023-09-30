@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:wght@300&family=DM+Serif+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+}
+
+/* .button {
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  color: white;
+  background-color: #626ccc;
+  padding: 10px;
+  margin: 20px;
+  width: 180px;
+  height: 50px;
+  margin-bottom: 50px;
+} */
+
+button1 {
+  width: 300x;
+  height: 100px;
+}
+.nav-Bar {
+  background: #0e1821;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.nav-Bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-Bar ul li {
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.nav-Bar ul li:hover {
+  background: rgb(65, 65, 65);
+}
+
+.nav-Bar ul li a {
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+}
+.nav-Bar > div {
+  height: 50px;
+}
+.nav-Bar > div img {
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.main-container {
+  background-image: url("../images/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container-content {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: column;
+}
+.main-container-content > div {
+  width: 60%;
+  text-align: left;
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  color: white;
+  line-height: 60px;
+}
+.main-container-content > div span {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.main-container-content p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Cormorant", serif;
+  margin-top: 20px;
+}
+.main-container-content button {
+  background: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.main-container-content button a {
+  color: black;
+  text-decoration: none;
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+}
+.main-container-content button:hover a {
+  text-decoration: none;
+}
+
+.second-section h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  margin-top: 40px;
+}
+.second-section p{
+  text-align: center;
+  margin-top: 10px;
+}
+.second-section > div {
+  width: 100% !important;
+  display: flex;
+  margin-left: 0px !important;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.second-section > div img {
+  width: 31%;
+  height: 620px;
+}
+
+.third-section {
+  display: block;
+  width: 100%;
+}
+.third-section h1{
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+.third-section > .row{
+  width: 80%;
+  margin: auto;
+  border: 1px solid black !important;
+  margin-top: 20px;
+  padding: 20px 0 40px 0px;
+  border-radius: 5px;
+}
+.third-section > .row .card .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.third-section > .row .card .row .col-md-4{
+  width: 15%;
+}
+.third-section > .row .card .row .col-md-8{
+  width: 60%;
+  margin-left: 4%;
+}
+.third-section > .row .card .row .col-md-8 p{
+  margin-top: 20px;
+}
+
+.third-section > .row .card .row .col-md-4 img{
+  width: 100%;
+}
+
+
+.fourth-section{
+  margin-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/Rect\ Light\ \(1\).svg');
+  background-size: cover;
+}
+.fourth-section .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.fourth-section .row h2{
+  color: white;
+  font-size: 3rem;
+  font-family: "Cinzel", serif;
+
+}
+.fourth-section .row h2 span{
+  display: block;
+  margin-left: 100px;
+}
+.fourth-section .row p{
+  margin-top: 20px;
+  color: white;
+  width: 60%;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-size: 1.5rem;
+}
+.fourth-section .row button{
+  margin-top: 20px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+}
+.fourth-section .row button a{
+  color: #000000;
+}
+  
+ 
+ 
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+@media(max-width:710px){
+  .nav-Bar{
+    padding: 5px 20px;
+  }
+  .nav-Bar ul{
+    display: none;
+  }
+  .main-container-content{
+    width: 100%;
+    align-items: center;
+  }
+  .main-container-content > div {
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+  .main-container-content button{
+    margin-left: 0%;
+  }
+  .text span{
+    display: inline !important;
+  }
+  .rtext span{
+    display: inline !important;
+  }
+  .second-section p{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .second-section > div img{
+    width: 95%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+
+  .third-section > .row{
+    width: 95%;
+  }
+  .third-section > .row .card .row{
+    flex-flow: column;
+  }
+  .third-section > .row .card .row .col-md-4{
+    width: 40%;
+  }
+  .third-section > .row .card .row .col-md-8{
+    width: 90%;
+    display: grid;
+  }
+  .third-section > .row .card .row .col-md-8 h2,p{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .fourth-section .row h2{
+    font-size: 1.7rem;
+    width: 90%;
+    text-align: center;
+  }
+  .fourth-section .row h2 span{
+    margin-left: 0px;
+    display: inline;
+  }
+
+  .fourth-section .row p{
+    font-size: 0.9rem;
+  }
+  .fourth-section .row button{
+    padding: 10px 30px;
+  }
+}
