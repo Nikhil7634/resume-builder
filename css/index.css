@@ -38,18 +38,20 @@ button1 {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
+  align-items: center !important;
+  padding: 10px 50px !important;
 }
 .nav-Bar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin-bottom: 0px !important;
 }
 .nav-Bar ul li {
-  padding: 5px 20px;
+  padding: 0px 20px !important;
   border-radius: 20px;
+  margin-bottom: 0px !important;
 }
 .nav-Bar ul li:hover {
   background: rgb(65, 65, 65);
@@ -66,7 +68,19 @@ button1 {
   height: 100%;
   filter: brightness(0) invert(1);
 }
-
+.menuBtn{
+  position: absolute;
+  right: 15px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+  display: none;
+}
+.menuBtn img{
+  height: 32px;
+  filter: invert(1);
+}
 .main-container {
   background-image: url("../images/bg.jpeg");
   background-position: center;
@@ -240,10 +254,28 @@ footer {
 }
 @media(max-width:710px){
   .nav-Bar{
-    padding: 5px 20px;
+    padding: 5px 20px !important;
+    position: relative;
   }
   .nav-Bar ul{
-    display: none;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-flow: column;
+    padding-block: 100px;
+    background: #0e1821;
+    transition: 0.5s;
+    transform: scaleY(0);
+  }
+  .slidedown{
+    transform: scaleY(1);
+  }
+  
+  .nav-Bar ul li{
+    margin-top: 0px;
+    padding: 10px 30px !important;
   }
   .main-container-content{
     width: 100%;
@@ -252,16 +284,12 @@ footer {
   .main-container-content > div {
     font-size: 2.5rem;
     line-height: 40px;
+    width: 70% !important;
   }
   .main-container-content button{
     margin-left: 0%;
   }
-  .text span{
-    display: inline !important;
-  }
-  .rtext span{
-    display: inline !important;
-  }
+  
   .second-section p{
     width: 90%;
     margin: auto;
@@ -308,5 +336,8 @@ footer {
   }
   .fourth-section .row button{
     padding: 10px 30px;
+  }
+  .menuBtn{
+    display: inline-block;
   }
 }

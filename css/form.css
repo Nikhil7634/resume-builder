@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
 * {
   box-sizing: border-box;
 }
@@ -93,7 +93,7 @@
 #nav {
   /* margin-top: 50px; */
   /* background-color: #32e479; */
-  background-color: transparent;
+  background-color: #c7c7c7;
 
   /* top: -5%; */
   /* left: -5%; */
@@ -237,14 +237,27 @@ div[class*="panel"] {
 ::-webkit-scrollbar-thumb:hover {
   background: #7c7c7c;
 }
-
-.form-control{
-  height: 40px;
-  width: 100%;
+#form1{
+  flex-wrap: wrap;
 }
-#form1,#form2,#form3{
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+#form > div{
+  padding: 0px !important;
+}
+#form1 > div div{
+  width: 100%;
+  margin: 0px !important;
+  flex-wrap: wrap;
+  
+}
+.form-label{
+  margin-top: 15px;
+}
+input{
+  width: 100% !important;
+}
+
+
+#form2 > div > div{
+  width: 100%;
+  margin-inline: 0px !important;
 }
