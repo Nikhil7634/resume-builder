@@ -236,7 +236,7 @@ div[class*="panel"] {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #7c7c7c;
-}
+}/*
 #form1{
   flex-wrap: wrap;
 }
@@ -260,4 +260,8 @@ input{
 #form2 > div > div{
   width: 100%;
   margin-inline: 0px !important;
+}
+*/
+body{
+  padding-top: 0;
 }
